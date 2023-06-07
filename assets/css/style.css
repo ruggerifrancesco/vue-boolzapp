@@ -8,6 +8,7 @@
 
     /* Measuraments */
     --main-chat-col: 830px;
+    --user-nav-h: 70px;
 
 }
 
@@ -53,5 +54,11 @@ div#app {
 
 .my_user-chat-main {
     width: 100%;
-    background-image: url(../img/mine.jpg);
+}
+
+.my_user-chat-list > .user-nav,
+.my_user-chat-main > .user-nav {
+    height: var(--user-nav-h);
+    background-color: var(--user-nav-top-bg);
+    width: 100%;
 }
