@@ -2,6 +2,8 @@
     /* Color Scheme */
     --top-app-bg: #009688;
     --rest-app-bg: #dadbd2;
+
+    --main-bg: #ffffff;
 }
 
 * {
@@ -18,4 +20,14 @@ body {
         var(--rest-app-bg) 15%,
         var(--rest-app-bg) 100%
     );
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.my_app-container {
+    background-color: var(--main-bg);
+    height: 90vh;
+    width: 1200px;
 }
