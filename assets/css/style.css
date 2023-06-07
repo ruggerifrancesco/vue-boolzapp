@@ -47,6 +47,10 @@ img {
     height: 100%;
 }
 
+ul {
+    list-style: none;
+}
+
 /* DO NOT TOUCH */
 div#app {
     width: 80%;
@@ -82,6 +86,9 @@ div#app {
 }
 
 .my_user-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     width: 100%;
     padding: 0.5rem;
 }
