@@ -20,14 +20,18 @@ body {
         var(--rest-app-bg) 15%,
         var(--rest-app-bg) 100%
     );
-
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+/* DO NOT TOUCH */
+div#app {
+    width: 80%;
+}
+
+/* DO NOT TOUCH */
 .my_app-container {
     background-color: var(--main-bg);
-    height: 90vh;
-    width: 1200px;
+    height: 95vh;
 }
