@@ -205,11 +205,11 @@ div#app {
     width: 38%;
     margin-bottom: 0.8rem;
 }
-    .status-sent {
+    .message.sent {
         background-color: var(--mesage-sent);
         align-self: flex-end;
     }
-    .status-received {
+    .message.received {
         background-color: var(--message-received);
     }
 
