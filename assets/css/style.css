@@ -20,7 +20,6 @@
 
 body {
     height: 100vh;
-    min-height: 400px;
     background: linear-gradient(
         to bottom,
         var(--top-app-bg) 0%,
