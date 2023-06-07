@@ -86,7 +86,7 @@ div#app {
     background-color: var(--search-chat-bg);
 }
     .has-search .form-control {
-        padding-left: 3rem;
+        padding-left: 5.2rem;
         background-color: white;
         border-radius: 0.15rem;
     }
@@ -97,6 +97,11 @@ div#app {
         pointer-events: none;
         color: var(--icons);
         font-weight: bold;
+        width: 5rem;
+        height: 2.375rem;
+        line-height: 2.375rem;
+        text-align: center;
+        border-right: 1px solid var(--columns-divider);
     }
 
 /* User Chat Main */
