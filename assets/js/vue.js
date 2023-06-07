@@ -166,7 +166,14 @@ createApp({
                 }
             ],
         }
-    ]    
+      ]    
+    }
+  },
+  methods: {
+    getLastSentMessage(contact) {
+      const sentMessages = contact.messages.filter(message => message.status === 'sent');
+      const lastSentMessage = sentMessages[sentMessages.length - 1];
+      return lastSentMessage ? lastSentMessage.message : 'No sent messages';
     }
   }
 }).mount('#app')
