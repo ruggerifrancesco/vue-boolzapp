@@ -102,9 +102,13 @@ div#app {
         overflow: hidden;
         border-radius: 50%;
     }
-    .my_personal-name {
+    .user-profile-data {
         margin-left: 1rem;
     }
+        .my_contact-last-access {
+            color: rgb(119, 118, 118);
+            font-size: 0.9rem;
+        }
     .top-nav-icons {
         color: var(--icons);
         font-size: 1.4rem;
@@ -143,7 +147,7 @@ div#app {
         border-right: 1px solid var(--columns-divider);
     }
 
-/* UserList Container */
+/* Contacts List Container */
 .my_contacts-list-container {
     height: calc(100% - var(--user-nav-h) - var(--search-input-container) - var(--notification-messages-h));
     overflow-y: scroll;
