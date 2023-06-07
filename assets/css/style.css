@@ -120,6 +120,9 @@ div#app {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--columns-divider);
 }
+.my_contacts-container:last-child {
+    border: none;
+}
     .contact-avatar {
         border-radius: 50%;
         width: 4rem;
