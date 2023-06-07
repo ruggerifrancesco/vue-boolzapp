@@ -27,8 +27,8 @@ body {
     background: linear-gradient(
         to bottom,
         var(--top-app-bg) 0%,
-        var(--top-app-bg) 15%,
-        var(--rest-app-bg) 15%,
+        var(--top-app-bg) 145px,
+        var(--rest-app-bg) 145px,
         var(--rest-app-bg) 100%
     );
     display: flex;
