@@ -80,7 +80,7 @@ div#app {
 
 .chat-messages-display {
     background-image: url(../img/mine.jpg);
-    height: calc(100% - var(--user-send-mess-container));
+    height: calc(100% - var(--user-send-mess-container) - var(--user-nav-h));
     overflow-y: scroll;
 }
 
