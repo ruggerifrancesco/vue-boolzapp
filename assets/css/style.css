@@ -5,6 +5,8 @@
 
     --main-bg: #ffffff;
     --user-nav-top-bg: #eaeaea;
+    --nav-icons: #b1b1b1;
+    --columns-divider: #dadada;
 
     /* Measuraments */
     --main-chat-col: 830px;
@@ -13,7 +15,7 @@
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -50,6 +52,7 @@ div#app {
 
 .my_user-chat-list {
     width: var(--main-chat-col);
+    border-right: 1px solid var(--columns-divider);
 }
 
 .my_user-chat-main {
