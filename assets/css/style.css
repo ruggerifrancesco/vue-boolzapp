@@ -179,3 +179,8 @@ div#app {
         font-size: 1.5rem;
         color: var(--send-input-icons);
     }
+
+    .emoji-btn > i,
+    .vocal-message-btn > i {
+        cursor: pointer;
+    }
