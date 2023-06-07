@@ -5,10 +5,11 @@
 
     --main-bg: #ffffff;
     --user-nav-top-bg: #eaeaea;
-    --nav-icons: #b1b1b1;
+    --icons: #b1b1b1;
     --columns-divider: #dadada;
     --notification-messages-bg: #8edafc;
     --user-send-container-bg: #f3eeea;
+    --search-chat-bg: #f9f9f9;
 
     /* Measuraments */
     --main-chat-col: 830px;
@@ -75,6 +76,28 @@ div#app {
     background-color: var(--notification-messages-bg);
     height: var(--notification-messages-h)
 }
+
+/* Search Bar */
+.my_search-bar {
+    height: 50px;
+    padding: 0 0.5rem;
+    display: flex;
+    align-items: center;
+    background-color: var(--search-chat-bg);
+}
+    .has-search .form-control {
+        padding-left: 3rem;
+        background-color: white;
+        border-radius: 0.15rem;
+    }
+    
+    .has-search > .form-control-serch-icon {
+        position: absolute;
+        z-index: 2;
+        pointer-events: none;
+        color: var(--icons);
+        font-weight: bold;
+    }
 
 /* User Chat Main */
 
