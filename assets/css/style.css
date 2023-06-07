@@ -15,6 +15,9 @@
     --contact-container-hover: #e9ebeb;
     --last-message-sent: #cecac3;
 
+    --message-received: white;
+    --mesage-sent: #d5f9ba;
+
     /* Measuraments */
     --main-chat-col: 830px;
     --user-nav-h: 70px;
@@ -191,7 +194,24 @@ div#app {
     background-image: url(../img/mine.jpg);
     height: calc(100% - var(--user-send-mess-container) - var(--user-nav-h));
     overflow-y: scroll;
+    width: 100%;
+    padding: 4rem 5rem 0.5rem 5rem;
+    display: flex;
+    flex-direction: column;
 }
+.message {
+    border-radius: 0.5rem;
+    padding: 1rem;
+    width: 38%;
+    margin-bottom: 0.8rem;
+}
+    .status-sent {
+        background-color: var(--mesage-sent);
+        align-self: flex-end;
+    }
+    .status-received {
+        background-color: var(--message-received);
+    }
 
 .my_user-send-container {
     background-color: var(--user-send-container-bg);
