@@ -7,15 +7,17 @@
     --user-nav-top-bg: #eaeaea;
     --nav-icons: #b1b1b1;
     --columns-divider: #dadada;
+    --notification-messages-bg: #8edafc;
 
     /* Measuraments */
     --main-chat-col: 830px;
     --user-nav-h: 70px;
+    --notification-messages-h: 80px;
 
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -56,11 +58,24 @@ div#app {
 
 .my_user-chat-main {
     width: 100%;
+    overflow: hidden;
 }
 
-.my_user-chat-list > .user-nav,
-.my_user-chat-main > .user-nav {
+.my_user-chat-list > .my_user-nav,
+.my_user-chat-main > .my_user-nav {
     height: var(--user-nav-h);
     background-color: var(--user-nav-top-bg);
     width: 100%;
+}
+
+/* User Chat List */
+.my_notification-messages {
+    background-color: var(--notification-messages-bg);
+    height: var(--notification-messages-h)
+}
+
+/* User Chat Main */
+.chat-messages-display {
+    background-image: url(../img/mine.jpg);
+    height: 100%;
 }
