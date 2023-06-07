@@ -20,7 +20,7 @@
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -111,15 +111,16 @@ div#app {
     }
 
 /* UserList Container */
-.my_user-list-container {
+.my_contacts-list-container {
     height: calc(100% - var(--user-nav-h) - var(--search-input-container) - var(--notification-messages-h));
     overflow-y: scroll;
 }
 
-.my_user-container {
-    padding: 0.7rem 1rem;
+.my_contacts-container {
+    padding: 0.5rem 1rem;
+    border-bottom: 1px solid var(--columns-divider);
 }
-    .user-avatar {
+    .contact-avatar {
         border-radius: 50%;
         width: 4rem;
         overflow: hidden;
