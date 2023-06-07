@@ -204,6 +204,7 @@ div#app {
     padding: 1rem;
     width: 38%;
     margin-bottom: 0.8rem;
+    position: relative;
 }
     .message.sent {
         background-color: var(--mesage-sent);
@@ -211,6 +212,13 @@ div#app {
     }
     .message.received {
         background-color: var(--message-received);
+    }
+    .my_message-time-table {
+        color: rgb(169, 166, 166);
+        font-size: 0.7rem;
+        position: absolute;
+        bottom: 0.2rem;
+        right: 0.4rem;
     }
 
 .my_user-send-container {
