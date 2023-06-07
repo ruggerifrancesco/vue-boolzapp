@@ -82,15 +82,21 @@ div#app {
 }
 
 .my_user-nav {
-    display: flex;
-    align-items: center;
+    width: 100%;
     padding: 0.5rem;
 }
+    .avatar-info-wrapper {
+        display: flex;
+        align-items: center;
+    }
     .my-top-avatar,
     .contact-top-avatar {
         width: 3.2rem;
         overflow: hidden;
         border-radius: 50%;
+    }
+    .my_personal-name {
+        margin-left: 1rem;
     }
 
 /* User Chat List */

@@ -32,8 +32,13 @@
             <section class="my_user-chat-list">
                 <div class="my_user-nav">
 
-                    <div class="my-top-avatar">
-                        <img src="assets/img/avatar_io.jpg" alt="My Personal Avatar">
+                    <div class="avatar-info-wrapper">
+                        <div class="my-top-avatar">
+                            <img src="assets/img/avatar_io.jpg" alt="My Personal Avatar">
+                        </div>
+                        <div class="user-profile-data">
+                            <h6 class="m-0 ms-2 my_personal-name">Sofia</h6>
+                        </div>
                     </div>
 
                 </div>
@@ -75,10 +80,16 @@
 
                 <div class="my_user-nav">
 
-                    <div class="contact-top-avatar">
-                        <img :src="`assets/${contacts[0].avatar}`" :alt="contacts[0].name">
+                    <div class="avatar-info-wrapper">
+                        <div class="contact-top-avatar">
+                            <img :src="`assets/${contacts[0].avatar}`" :alt="contacts[0].name">
+                        </div>
+                        <div class="user-profile-data">
+                            <h6 class="m-0 ms-2 my_personal-name">
+                                {{ contacts[0].name }}
+                            </h6>
+                        </div>
                     </div>
-
                 </div>
 
                 <div class="chat-messages-display">
