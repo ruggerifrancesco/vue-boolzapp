@@ -3,3 +3,19 @@
     --top-app-bg: #009688;
     --rest-app-bg: #dadbd2;
 }
+
+* {
+    outline: 1px solid red;
+}
+
+body {
+    height: 100vh;
+    min-height: 400px;
+    background: linear-gradient(
+        to bottom,
+        var(--top-app-bg) 0%,
+        var(--top-app-bg) 15%,
+        var(--rest-app-bg) 15%,
+        var(--rest-app-bg) 100%
+    );
+}
