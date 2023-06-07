@@ -16,11 +16,11 @@
     --user-nav-h: 70px;
     --notification-messages-h: 80px;
     --user-send-mess-container: 70px;
-
+    --search-input-container: 50px;
 }
 
 * {
-    /* outline: 1px solid red; */
+    outline: 1px solid red;
 }
 
 body {
@@ -47,6 +47,7 @@ div#app {
     background-color: var(--main-bg);
     height: 95vh;
     display: flex;
+    overflow: hidden;
 }
 
 .my_user-chat-list,
@@ -61,7 +62,6 @@ div#app {
 
 .my_user-chat-main {
     width: 100%;
-    overflow: hidden;
 }
 
 .my_user-chat-list > .my_user-nav,
@@ -79,7 +79,7 @@ div#app {
 
 /* Search Bar */
 .my_search-bar {
-    height: 50px;
+    height: var(--search-input-container);
     padding: 0 0.5rem;
     display: flex;
     align-items: center;
@@ -104,8 +104,13 @@ div#app {
         border-right: 1px solid var(--columns-divider);
     }
 
-/* User Chat Main */
+/* UserList Container */
+.my_user-list-container {
+    height: calc(100% - var(--user-nav-h) - var(--search-input-container) - var(--notification-messages-h));
+    overflow-y: scroll;
+}
 
+/* User Chat Main */
 .chat-messages-display {
     background-image: url(../img/mine.jpg);
     height: calc(100% - var(--user-send-mess-container) - var(--user-nav-h));
