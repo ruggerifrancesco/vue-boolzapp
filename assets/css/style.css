@@ -11,6 +11,9 @@
     --user-send-container-bg: #f3eeea;
     --search-chat-bg: #f9f9f9;
 
+    --contact-container-hover: #e9ebeb;
+    --last-message-sent: #cecac3;
+
     /* Measuraments */
     --main-chat-col: 830px;
     --user-nav-h: 70px;
@@ -119,15 +122,27 @@ div#app {
 .my_contacts-container {
     padding: 0.5rem 1rem;
     border-bottom: 1px solid var(--columns-divider);
+    display: flex;
+    cursor: pointer;
 }
 .my_contacts-container:last-child {
     border: none;
+}
+.my_contacts-container:hover {
+    background-color: var(--contact-container-hover);
 }
     .contact-avatar {
         border-radius: 50%;
         width: 4rem;
         overflow: hidden;
     }
+    .contact-info {
+        margin-left: 1.5rem;
+    }
+        .contact-last-message {
+            color: rgb(169, 166, 166);
+            font-size: 0.9rem;
+        }
 
 /* User Chat Main */
 .chat-messages-display {
