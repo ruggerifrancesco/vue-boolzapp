@@ -4,6 +4,11 @@
     --rest-app-bg: #dadbd2;
 
     --main-bg: #ffffff;
+    --user-nav-top-bg: #eaeaea;
+
+    /* Measuraments */
+    --main-chat-col: 830px;
+
 }
 
 * {
@@ -34,4 +39,19 @@ div#app {
 .my_app-container {
     background-color: var(--main-bg);
     height: 95vh;
+    display: flex;
+}
+
+.my_user-chat-list,
+.my_user-chat-main {
+    height: 100%;
+}
+
+.my_user-chat-list {
+    width: var(--main-chat-col);
+}
+
+.my_user-chat-main {
+    width: 100%;
+    background-image: url(../img/mine.jpg);
 }
