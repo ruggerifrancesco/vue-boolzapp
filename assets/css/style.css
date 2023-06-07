@@ -10,6 +10,7 @@
     --notification-messages-bg: #8edafc;
     --user-send-container-bg: #f3eeea;
     --search-chat-bg: #f9f9f9;
+    --send-input-icons: #626b6e;
 
     --contact-container-hover: #e9ebeb;
     --last-message-sent: #cecac3;
@@ -23,7 +24,7 @@
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -168,3 +169,13 @@ div#app {
     align-items: center;
     width: 100%;
 }
+    .message-send-input {
+        width: 100%;
+    }
+
+    .emoji-btn,
+    .vocal-message-btn {
+        padding: 0 2.5rem;
+        font-size: 1.5rem;
+        color: var(--send-input-icons);
+    }
