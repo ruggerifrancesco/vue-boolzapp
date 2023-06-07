@@ -37,6 +37,12 @@ body {
     align-items: center;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 /* DO NOT TOUCH */
 div#app {
     width: 80%;
@@ -109,6 +115,15 @@ div#app {
     height: calc(100% - var(--user-nav-h) - var(--search-input-container) - var(--notification-messages-h));
     overflow-y: scroll;
 }
+
+.my_user-container {
+    padding: 0.7rem 1rem;
+}
+    .user-avatar {
+        border-radius: 50%;
+        width: 4rem;
+        overflow: hidden;
+    }
 
 /* User Chat Main */
 .chat-messages-display {
