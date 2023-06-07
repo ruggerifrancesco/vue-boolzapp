@@ -8,16 +8,18 @@
     --nav-icons: #b1b1b1;
     --columns-divider: #dadada;
     --notification-messages-bg: #8edafc;
+    --user-send-container-bg: #f3eeea;
 
     /* Measuraments */
     --main-chat-col: 830px;
     --user-nav-h: 70px;
     --notification-messages-h: 80px;
+    --user-send-mess-container: 70px;
 
 }
 
 * {
-    outline: 1px solid red;
+    /* outline: 1px solid red; */
 }
 
 body {
@@ -75,7 +77,16 @@ div#app {
 }
 
 /* User Chat Main */
+
 .chat-messages-display {
     background-image: url(../img/mine.jpg);
-    height: 100%;
+    height: calc(100% - var(--user-send-mess-container));
+    overflow-y: scroll;
+}
+
+.my_user-send-container {
+    background-color: var(--user-send-container-bg);
+    height: var(--user-send-mess-container);
+    position: sticky;
+    bottom: 0;
 }
