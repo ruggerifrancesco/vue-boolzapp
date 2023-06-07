@@ -169,8 +169,11 @@ div#app {
     align-items: center;
     width: 100%;
 }
-    .message-send-input {
+    .message-send-input-container {
         width: 100%;
+    }
+    .my_input-message-send {
+        height: 50px;
     }
 
     .emoji-btn,
