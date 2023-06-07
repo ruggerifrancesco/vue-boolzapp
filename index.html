@@ -30,7 +30,13 @@
         <main class="my_app-container">
 
             <section class="my_user-chat-list">
-                <div class="my_user-nav"></div>
+                <div class="my_user-nav">
+
+                    <div class="my-top-avatar">
+                        <img src="assets/img/avatar_io.jpg" alt="My Personal Avatar">
+                    </div>
+
+                </div>
 
                 <div class="my_notification-messages"></div>
 
@@ -66,7 +72,14 @@
             </section>
 
             <section class="my_user-chat-main">
-                <div class="my_user-nav"></div>
+
+                <div class="my_user-nav">
+
+                    <div class="contact-top-avatar">
+                        <img :src="`assets/${contacts[0].avatar}`" :alt="contacts[0].name">
+                    </div>
+
+                </div>
 
                 <div class="chat-messages-display">
                     

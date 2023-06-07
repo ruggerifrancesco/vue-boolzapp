@@ -81,6 +81,16 @@ div#app {
     width: 100%;
 }
 
+.my_user-nav {
+    
+}
+    .my-top-avatar,
+    .contact-top-avatar {
+        width: 2rem;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+
 /* User Chat List */
 .my_notification-messages {
     background-color: var(--notification-messages-bg);
