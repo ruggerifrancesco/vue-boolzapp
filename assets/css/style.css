@@ -120,7 +120,7 @@ div#app {
 }
 
 .my_contacts-container {
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    padding: 0.5rem 0.8rem 0.5rem 1rem;
     border-bottom: 1px solid var(--columns-divider);
     display: flex;
     cursor: pointer;
@@ -149,7 +149,7 @@ div#app {
         font-size: 0.7rem;
         position: absolute;
         top: 0.5rem;
-        right: 0.5rem;
+        right: 0.8rem;
     }
 
 /* User Chat Main */
