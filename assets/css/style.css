@@ -190,6 +190,9 @@ div#app {
         top: 0.5rem;
         right: 0.8rem;
     }
+.active-chat {
+    background-color: var(--contact-container-hover);
+}
 
 /* User Chat Main */
 .chat-messages-display {
