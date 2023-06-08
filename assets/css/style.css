@@ -42,6 +42,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Lato', sans-serif;
 }
 
 img {
@@ -57,6 +58,7 @@ ul {
 /* DO NOT TOUCH */
 div#app {
     width: 80%;
+    max-width: 2100px;
 }
 
 /* DO NOT TOUCH */
@@ -65,7 +67,6 @@ div#app {
     height: 95vh;
     display: flex;
     overflow: hidden;
-    max-width: 2100px;
 }
 
 .my_user-chat-list,
