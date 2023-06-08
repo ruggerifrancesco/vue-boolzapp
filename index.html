@@ -126,19 +126,13 @@
 
                 <!-- Main Chat -->
                 <div class="chat-messages-display">
-                    <div class="message sent">
-                        <p class="m-0">Hai portato a spasso il cane?</p>
-                        <span class="my_message-time-table">12:00</span>
+                    <div
+                      class="message" v-for="(message, index) in contacts[activeContactIndex].messages" :key="index"
+                      :class="{ sent: message.status === 'sent', received: message.status === 'received' }">
+                      <p class="m-0">{{ message.message }}</p>
+                      <span class="my_message-time-table">{{ message.date }}</span>
                     </div>
-                    <div class="message sent">
-                        <p class="m-0">Ricordati di stendere i panni</p>
-                        <span class="my_message-time-table">12:00</span>
-                    </div>
-                    <div class="message received">
-                        <p class="m-0">Tutto fatto!</p>
-                        <span class="my_message-time-table">12:00</span>
-                    </div>
-                </div>
+                  </div>
 
                 <div class="my_user-send-container">
 
