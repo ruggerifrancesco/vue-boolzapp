@@ -65,6 +65,7 @@ div#app {
     height: 95vh;
     display: flex;
     overflow: hidden;
+    max-width: 2100px;
 }
 
 .my_user-chat-list,
