@@ -224,6 +224,9 @@ div#app {
         position: absolute;
         bottom: 0.2rem;
         right: 0.4rem;
+        -webkit-user-select: none; /* Safari */
+        -ms-user-select: none; /* IE 10 and IE 11 */
+        user-select: none; /* Standard syntax */
     }
 
 .my_user-send-container {
