@@ -158,17 +158,17 @@ div#app {
     overflow-y: scroll;
 }
 
-.my_contacts-container {
+.my_contact-container {
     padding: 0.5rem 0.8rem 0.5rem 1rem;
     border-bottom: 1px solid var(--columns-divider);
     display: flex;
     cursor: pointer;
     position: relative;
 }
-.my_contacts-container:last-child {
+.my_contact-container:last-child {
     border: none;
 }
-.my_contacts-container:hover {
+.my_contact-container:hover {
     background-color: var(--contact-container-hover);
 }
     .contact-avatar {

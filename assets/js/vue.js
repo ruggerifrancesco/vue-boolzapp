@@ -171,8 +171,8 @@ createApp({
     }
   },
   methods: {
-    selectContactChat() {
-
+    selectContactChat(index) {
+        this.activeContactIndex = index;
     },
     getLastSentMessage(contact) {
       const sentMessages = contact.messages.filter(message => message.status === 'sent');
