@@ -203,6 +203,9 @@ createApp({
             }, 1000);
         }
     },
+    deleteMessage(index) {
+        this.contacts[this.activeContactIndex].messages.splice(index, 1);
+    },
     // TO DO getLastSentMessage soon trasnform into computed
     getLastSentMessage(contact) {
       const sentMessages = contact.messages.filter(message => message.status === 'sent');
