@@ -6,6 +6,7 @@ createApp({
       message: 'Hello Vue!',
       activeContactIndex: 0,
       newMessageInput: '',
+      searchQuery: '',
       contacts: [
         {
             name: 'Michele',
