@@ -202,13 +202,20 @@ createApp({
               activeContact.messages.push(autResponseMessage);
             }, 1000);
         }
-    },
+    }, 
     deleteMessage(index) {
         const confirmation = window.confirm("Sei sicuro di voler rimuovere questo messaggio?");
         if (confirmation) {
             this.contacts[this.activeContactIndex].messages.splice(index, 1);
             console.log('Messaggio eliminato!')
         }
+    },
+    messageinfo(message) {
+        return alert(`
+            Date: ${message.date}
+            Message: ${message.message}
+            Status: ${message.status}
+        `);
     },
     // TO DO getLastSentMessage soon trasnform into computed
     getLastSentMessage(contact) {
