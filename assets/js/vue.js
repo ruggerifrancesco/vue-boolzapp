@@ -189,6 +189,17 @@ createApp({
             
             // Console Log Test for new array messages
             // console.log(this.contacts)
+
+            // Delayed automatic response
+            setTimeout(() => {
+              const autResponseMessage = {
+                date: new Date().toLocaleString(),
+                message: 'Ok',
+                status: 'received'
+              };
+          
+              activeContact.messages.push(autResponseMessage);
+            }, 1000);
         }
     },
     // TO DO getLastSentMessage soon trasnform into computed
