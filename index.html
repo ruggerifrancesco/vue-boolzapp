@@ -130,8 +130,17 @@
                       :class="{ sent: message.status === 'sent', received: message.status === 'received' }">
                       <p class="m-0">{{ message.message }}</p>
                       <span class="my_message-time-table">{{ message.date }}</span>
-                      <span v-if="message.status === 'sent'" class="dropdown-icon">
-                        <i class="fa-solid fa-chevron-down"></i>
+                      <span v-if="message.status === 'sent'" class="btn-group dropdown-icon">
+                        <button type="button" class="p-0 my_icon-btn" data-bs-toggle="dropdown">
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><button class="dropdown-item" type="button">Action</button></li>
+                            <li><button class="dropdown-item" type="button">Another action</button></li>
+                            <li><button class="dropdown-item" type="button">Something else here</button></li>
+                          </ul>
+                        
                       </span>
                     </div>
                   </div>

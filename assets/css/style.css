@@ -230,10 +230,17 @@ div#app {
         user-select: none; /* Standard syntax */
     }
     .dropdown-icon {
-        display: block;
+        display: none;
         position: absolute;
         top: 0.8rem;
         right: 0.4rem;
+    }
+        .my_icon-btn {
+            border: none;
+            background: none;
+        }
+    .message.sent:hover .dropdown-icon {
+        display: block;
     }
 
 .my_user-send-container {
