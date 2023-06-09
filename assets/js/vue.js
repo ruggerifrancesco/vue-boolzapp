@@ -209,5 +209,8 @@ createApp({
       const lastSentMessage = sentMessages[sentMessages.length - 1];
       return lastSentMessage ? lastSentMessage.message : 'No sent messages';
     }
+  },
+  computed: {
+    
   }
 }).mount('#app')
