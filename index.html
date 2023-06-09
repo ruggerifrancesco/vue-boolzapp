@@ -130,7 +130,9 @@
                       :class="{ sent: message.status === 'sent', received: message.status === 'received' }">
                       <p class="m-0">{{ message.message }}</p>
                       <span class="my_message-time-table">{{ message.date }}</span>
-                      <i v-if="message.status === 'sent'" class="fa-solid fa-chevron-down"></i>
+                      <span v-if="message.status === 'sent'">
+                        <i class="fa-solid fa-chevron-down"></i>
+                      </span>
                     </div>
                   </div>
 
