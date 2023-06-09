@@ -187,7 +187,8 @@ createApp({
             activeContact.messages.push(newMessage);
             this.newMessageInput = '';
             
-            console.log(this.contacts)
+            // Console Log Test for new array messages
+            // console.log(this.contacts)
         }
     },
     // TO DO getLastSentMessage soon trasnform into computed
