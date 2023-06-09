@@ -204,7 +204,11 @@ createApp({
         }
     },
     deleteMessage(index) {
-        this.contacts[this.activeContactIndex].messages.splice(index, 1);
+        const confirmation = window.confirm("Sei sicuro di voler rimuovere questo messaggio?");
+        if (confirmation) {
+            this.contacts[this.activeContactIndex].messages.splice(index, 1);
+            console.log('Messaggio eliminato!')
+        }
     },
     // TO DO getLastSentMessage soon trasnform into computed
     getLastSentMessage(contact) {
