@@ -5,6 +5,7 @@ createApp({
     return {
       message: 'Hello Vue!',
       activeContactIndex: 0,
+      newMessageInput: '',
       contacts: [
         {
             name: 'Michele',
@@ -175,7 +176,12 @@ createApp({
         this.activeContactIndex = index;
     },
     addNewMessage() {
+        if (this.newMessageInput !=='') {
+            this.contacts.push('test');
+            this.newMessageInput = '';
 
+            console.log(this.contacts)
+        }
     },
     // TO DO getLastSentMessage soon trasnform into computed
     getLastSentMessage(contact) {

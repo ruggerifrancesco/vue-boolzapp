@@ -140,7 +140,8 @@
                     </div>
                     <div class="message-send-input-container">
                         <form>
-                            <input type="text" class="form-control my_input-message-send" placeholder="Scrivi un messaggio" required>
+                            <input type="text" class="form-control my_input-message-send" placeholder="Scrivi un messaggio" required
+                                v-model="newMessageInput" @keyup.enter="addNewMessage()">
                         </form>
                     </div>
                     <div class="vocal-message-btn">
