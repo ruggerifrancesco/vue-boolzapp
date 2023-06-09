@@ -174,7 +174,6 @@ createApp({
   },
   methods: {
     selectContactChat(index) {
-        const activeContact = this.contacts.findIndex(contact => contact.visible);
         this.activeContactIndex = index;
     },
     addNewMessage() {
