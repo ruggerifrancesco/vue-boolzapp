@@ -211,6 +211,10 @@ createApp({
     }
   },
   computed: {
-    
+    filteredContacts() {
+        if (this.searchQuery === '') {
+          return this.contacts; // Return all contacts if search query is empty
+        }
+    }
   }
 }).mount('#app')
