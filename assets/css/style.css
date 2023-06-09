@@ -272,3 +272,6 @@ div#app {
     .send-message-btn > i {
         cursor: pointer;
     }
+    .send-message-btn {
+        display: none;
+    }
