@@ -177,7 +177,8 @@ createApp({
     },
     addNewMessage() {
         if (this.newMessageInput !=='') {
-            this.contacts.push('test');
+            // test to see new contacts array
+            this.contacts.push(this.inputValue);
             this.newMessageInput = '';
 
             console.log(this.contacts)
