@@ -214,6 +214,11 @@ createApp({
     filteredContactsList() {
         if (this.searchQuery === '') {
           return this.contacts; // Return all contacts if search query is empty
+        } else {
+            const lowercaseSearchQuery = this.searchQuery.toLowerCase();
+            return this.contacts.filter(contact =>
+                contact.name.toLowerCase().includes(lowercaseSearchQuery)
+            );
         }
     }
   }
