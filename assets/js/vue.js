@@ -176,11 +176,17 @@ createApp({
         this.activeContactIndex = index;
     },
     addNewMessage() {
-        if (this.newMessageInput !=='') {
-            // test to see new contacts array
-            this.contacts.push(this.newMessageInput);
+        if (this.newMessageInput !== '') {
+            const activeContact = this.contacts[this.activeContactIndex];
+            const newMessage = {
+              date: new Date().toLocaleString(),
+              message: this.newMessageInput,
+              status: 'sent'
+            };
+      
+            activeContact.messages.push(newMessage);
             this.newMessageInput = '';
-
+            
             console.log(this.contacts)
         }
     },
