@@ -260,13 +260,15 @@ div#app {
     }
 
     .emoji-btn,
-    .vocal-message-btn {
+    .vocal-message-btn,
+    .send-message-btn {
         padding: 0 2.5rem;
         font-size: 1.5rem;
         color: var(--send-input-icons);
     }
 
     .emoji-btn > i,
-    .vocal-message-btn > i {
+    .vocal-message-btn > i,
+    .send-message-btn > i {
         cursor: pointer;
     }
