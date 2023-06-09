@@ -13,6 +13,7 @@
     --send-input-icons: #626b6e;
 
     --contact-container-hover: #e9ebeb;
+    --contact-container-active: #e9ebeb;
     --last-message-sent: #cecac3;
 
     --message-received: white;
@@ -191,7 +192,7 @@ div#app {
         right: 0.8rem;
     }
 .active-chat {
-    background-color: var(--contact-container-hover);
+    background-color: var(--contact-container-active);
 }
 
 /* User Chat Main */
