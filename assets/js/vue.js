@@ -221,7 +221,11 @@ createApp({
         const lowercaseQuery = this.searchQuery.toLowerCase();
         this.contacts.forEach((contact) => {
           const lowercaseName = contact.name.toLowerCase();
-          contact.visible = lowercaseName.includes(lowercaseQuery);
+          if (lowercaseQuery !== '') {
+            contact.visible = false 
+          } else if (lowercaseName.includes(lowercaseQuery)) {
+            contact.visible = true
+          }
         });
     },
     // TO DO getLastSentMessage soon trasnform into computed

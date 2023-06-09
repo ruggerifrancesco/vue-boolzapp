@@ -75,7 +75,7 @@
 
                 <!--  Contacts List -->
                 <div class="my_contacts-list-container">
-                    <div class="my_contact-container" v-for="(contact, index) in contacts" 
+                    <div class="my_contact-container" v-for="(contact, index) in contacts"
                         :key="contact.name" @click="selectContactChat(index)" :class="{ 'active-chat': activeContactIndex === index }">
                         <div class="contact-avatar">
                             <img :src="`assets${contact.avatar}`" :alt="contact.name">
