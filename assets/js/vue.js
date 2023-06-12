@@ -238,6 +238,6 @@ createApp({
           const nameContainsLetter = contact.name.toLowerCase().includes(searchQuery);
           return nameContainsLetter;
         });
-      }
+    },
   }
 }).mount('#app');
