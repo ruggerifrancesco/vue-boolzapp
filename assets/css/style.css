@@ -123,8 +123,35 @@ div#app {
 /* User Chat List */
 .my_notification-messages {
     background-color: var(--notification-messages-bg);
-    height: var(--notification-messages-h)
+    height: var(--notification-messages-h);
+    display: flex;
+    align-items: center;
 }
+    .my_notification-icon {
+        background-color: white;
+        width: 3.5rem;
+        height: 3.5rem;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 1rem;
+    }
+    .my_notification-icon > i {
+        color: var(--notification-messages-bg);
+        font-size: 2rem;
+    }
+    .my_notification-link {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+    }
+    .notification-title {
+        font-weight: 500;
+    }
+    .notification-link {
+        color: var(--send-input-icons);
+    }
 
 /* Search Bar */
 .my_search-bar {

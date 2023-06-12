@@ -60,22 +60,30 @@
                     </ul>
                 </div>
 
-                <div class="my_notification-messages"></div>
+                <div class="my_notification-messages">
+                    <div class="my_notification-icon">
+                        <i class="fa-solid fa-bell-slash"></i>
+                    </div>
+                    <div class="my_notification-link">
+                        <span class="notification-title">Ricevi notifiche di nuovi messaggi</span>
+                        <a href="#" class="notification-link">Attiva le notifiche desktop</a>
+                    </div>
+                </div>
 
                 <!-- Search Bar Input -->
                 <div class="my_search-bar">
                     <form class="d-flex w-100" role="search">
                       <div class="form-group has-search w-100">
                         <i class="fa-solid fa-magnifying-glass form-control-serch-icon"></i>
-                        <input class="form-control" type="search" 
-                        placeholder="Cerca o inzia una nuova chat..." aria-label="Search" v-model="searchQuery" @keyup="filterContacts()">
+                        <input class="form-control" type="search" @input="updateVisible"
+                        placeholder="Cerca o inzia una nuova chat..." aria-label="Search" v-model="searchQuery">
                       </div>
                     </form>
                 </div>
 
                 <!--  Contacts List -->
                 <div class="my_contacts-list-container">
-                    <div class="my_contact-container" v-for="(contact, index) in contacts"
+                    <div class="my_contact-container" v-for="(contact, index) in filterContacts"
                         :key="contact.name" @click="selectContactChat(index)" :class="{ 'active-chat': activeContactIndex === index }">
                         <div class="contact-avatar">
                             <img :src="`assets${contact.avatar}`" :alt="contact.name">
