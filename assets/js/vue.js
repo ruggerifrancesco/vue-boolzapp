@@ -217,15 +217,11 @@ createApp({
             Status: ${message.status}
         `);
     },
-    filterContacts() {
-        const lowercaseQuery = this.searchQuery.toLowerCase();
+    updateVisible() {
+        const searchQuery = this.searchQuery.toLowerCase();
         this.contacts.forEach((contact) => {
-          const lowercaseName = contact.name.toLowerCase();
-          if (lowercaseQuery !== '') {
-            contact.visible = false 
-          } else if (lowercaseName.includes(lowercaseQuery)) {
-            contact.visible = true
-          }
+          const nameContainsLetter = contact.name.toLowerCase().includes(searchQuery);
+          contact.visible = nameContainsLetter;
         });
     },
     // TO DO getLastSentMessage soon trasnform into computed
@@ -236,5 +232,12 @@ createApp({
     }
   },
   computed: {
+    filterContacts() {
+        const searchQuery = this.searchQuery.toLowerCase();
+        return this.contacts.filter((contact) => {
+          const nameContainsLetter = contact.name.toLowerCase().includes(searchQuery);
+          return nameContainsLetter;
+        });
+      }
   }
 }).mount('#app');
