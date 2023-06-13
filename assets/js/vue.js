@@ -217,10 +217,13 @@ createApp({
             Status: ${message.status}
         `);
     },
-    // TO DO getLastSentMessage soon trasnform into computed
     getLastSentMessage(contact) {
       const sentMessages = contact.messages.filter(message => message.status === 'sent');
+      const receivedMessages = contact.messages.filter(message => message.status === 'received');
+
       const lastSentMessage = sentMessages[sentMessages.length - 1];
+      const lastReceivedMessage = receivedMessages[receivedMessages.length - 1];
+      
       return lastSentMessage ? lastSentMessage.message : 'No sent messages';
     }
   },
