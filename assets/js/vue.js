@@ -221,7 +221,12 @@ createApp({
         const messages = contact.messages;
         const lastMessage = messages[messages.length - 1];
         return lastMessage ? lastMessage.message : 'No messages';
-      }
+    },
+    getLastSentMessageDate(contact) {
+        const messages = contact.messages;
+        const lastMessage = messages[messages.length - 1];
+        return lastMessage ? this.formattedTime(lastMessage.date) : '';
+    }
   },
   computed: {
     filterContacts() {
