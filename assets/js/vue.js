@@ -217,13 +217,6 @@ createApp({
             Status: ${message.status}
         `);
     },
-    updateVisible() {
-        const searchQuery = this.searchQuery.toLowerCase();
-        this.contacts.forEach((contact) => {
-          const nameContainsLetter = contact.name.toLowerCase().includes(searchQuery);
-          contact.visible = nameContainsLetter;
-        });
-    },
     // TO DO getLastSentMessage soon trasnform into computed
     getLastSentMessage(contact) {
       const sentMessages = contact.messages.filter(message => message.status === 'sent');

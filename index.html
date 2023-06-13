@@ -75,7 +75,7 @@
                     <form class="d-flex w-100" role="search">
                       <div class="form-group has-search w-100">
                         <i class="fa-solid fa-magnifying-glass form-control-serch-icon"></i>
-                        <input class="form-control" type="search" @input="updateVisible"
+                        <input class="form-control" type="search"
                         placeholder="Cerca o inzia una nuova chat..." aria-label="Search" v-model="searchQuery">
                       </div>
                     </form>
@@ -96,7 +96,8 @@
                                 {{ getLastSentMessage(contact) }}
                             </span>
                         </div>
-                        <span class="last-message-time-table">12:00</span>
+                        <span class="last-message-time-table">12:00
+                        </span>
                     </div>
                 </div>
 
