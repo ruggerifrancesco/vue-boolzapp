@@ -180,7 +180,7 @@ createApp({
         if (this.newMessageInput !== '') {
             const activeContact = this.contacts[this.activeContactIndex];
             const newMessage = {
-              date: new Date().toLocaleString(),
+              date: new Date(),
               message: this.newMessageInput,
               status: 'sent'
             };
@@ -194,7 +194,7 @@ createApp({
             // Delayed automatic response
             setTimeout(() => {
               const autResponseMessage = {
-                date: new Date().toLocaleString(),
+                date: new Date(),
                 message: 'Ok',
                 status: 'received'
               };
@@ -231,5 +231,11 @@ createApp({
           return nameContainsLetter;
         });
     },
+    formattedTime() {
+        return function(date) {
+          const options = { hour: 'numeric', minute: 'numeric' };
+          return new Date(date).toLocaleTimeString([], options);
+        };
+    }
   }
 }).mount('#app');

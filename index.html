@@ -138,7 +138,9 @@
                     <div class="message" v-for="(message, index) in filterContacts[activeContactIndex].messages" :key="index"
                       :class="{ sent: message.status === 'sent', received: message.status === 'received' }">
                       <p class="m-0">{{ message.message }}</p>
-                      <span class="my_message-time-table">{{ message.date }}</span>
+                      <span class="my_message-time-table">
+                        {{ formattedTime(message.date) }}
+                      </span>
                       <span v-if="message.status === 'sent'" class="btn-group dropdown-icon">
                         <button type="button" class="p-0 my_icon-btn" data-bs-toggle="dropdown">
                             <i class="fa-solid fa-chevron-down"></i>
