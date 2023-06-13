@@ -218,14 +218,10 @@ createApp({
         `);
     },
     getLastSentMessage(contact) {
-      const sentMessages = contact.messages.filter(message => message.status === 'sent');
-      const receivedMessages = contact.messages.filter(message => message.status === 'received');
-
-      const lastSentMessage = sentMessages[sentMessages.length - 1];
-      const lastReceivedMessage = receivedMessages[receivedMessages.length - 1];
-      
-      return lastSentMessage ? lastSentMessage.message : 'No sent messages';
-    }
+        const messages = contact.messages;
+        const lastMessage = messages[messages.length - 1];
+        return lastMessage ? lastMessage.message : 'No messages';
+      }
   },
   computed: {
     filterContacts() {
